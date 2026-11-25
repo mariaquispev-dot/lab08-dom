@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi lista de tareas</title>
+</head>
+<body>
+
+    <h1>Mi lista de tareas</h1>
+
+    <form id="formularioTarea">
+        <input
+            type="text"
+            id="descripcion"
+            placeholder="Escribe una tarea"
+            required
+        >
+
+        <select id="prioridad">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select>
+
+        <button type="submit">Agregar tarea</button>
+    </form>
+
+    <ul id="listaTareas"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
